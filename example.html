@@ -1,0 +1,144 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey Map Creator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="outmost-container">
+        <header>
+            <div class="row-center">
+                <img src="images/QUT.png" alt="QUT LOGO" />
+                <h1> Journey Map Creator</h1>
+            </div>
+        </header>
+        <nav>
+            <div class="row-center">
+                <button id="hide-control"> Show Control Tab</button>
+                <!-- <a href="">
+                    <span>
+                        Placeholder
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        Placeholder
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        Placeholder
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        Placeholder
+                    </span>
+                </a> -->
+            </div>
+        </nav>
+        <div id="mind-map-container">
+            <div id="control-tab">
+                <div id="control-left">
+                    <div id="node-title-container">
+                        Node Title: 
+                        <input type="node-title" name="node-title" id="node-title" value="Hard Assignments" />
+                    </div>
+                    <div id="node-property-container">
+                        Node Type: 
+                        <select name="nodes" id="node-dropdown">
+                            <option value="event">Event</option>
+                            <option value="thought">Thoughts</option>
+                            <option value="consequence">Consequences</option>
+                        </select>
+                    </div>
+                    <div id="connections-container">
+                        <div id="connectors">
+                            <button id="add-connection" style="">Add Connection</button>
+                        </div>
+                        <div id="connect-from-container">
+                            <h4>From:</h4>
+                            <ul id="connect-from">Attending University</ul>
+                        </div>
+                        <div id="connect-to-container">
+                            <h4>To:</h4>
+                            <ul>
+                                <li id="connect-to">Ask for support,STIMulate</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="delete-container">
+                        <button id="delete-button">
+                            Delete Selected Node
+                        </button>
+                    </div>
+                    <div id="save-container">
+                        <button>
+                            Save Journey Map
+                        </button>
+                    </div>
+                    <div id="export-container">
+                        <button>
+                            Export Data
+                        </button>
+                    </div>
+                </div>
+
+                <div id="control-right">
+                    <p>
+                        Text Content
+                    </p>
+                    <!-- <input type="text" id="input-container"> -->
+                    <textarea name="input-container" id="input-container">Had some very hard assignments. Struggling with some of the math concepts. </textarea>
+                </div>
+            </div>
+            <div id="mind-map">
+                <!-- DSA -->
+            <div class="mind-map-nodes event" id="Moved To Queensland" style="left: 121px; top: 129px; z-index: 1;"><textarea class="node-title">Moved To Queensland</textarea><textarea class="node-description">Lived in Darwin all my life. Moved to Queenslandby by myself to study electrical engineering at QUT</textarea></div><div class="mind-map-nodes event" id="Attending University" style="left: 387px; top: 126px; z-index: 2;"><textarea class="node-title">Attending University</textarea><textarea class="node-description">Was enrolled at QUT as a full time student. Went to university every weekday to study</textarea></div><div class="mind-map-nodes thought" id="By Myself" style="left: 120px; top: 385px; z-index: 2;"><textarea class="node-title">By Myself</textarea><textarea class="node-description">First time being properly alone is very scare. Was worried about what the future would look like</textarea></div><div class="mind-map-nodes event" id="Making Friends" style="left: 658px; top: 285px; z-index: 2;"><textarea class="node-title">Making Friends</textarea><textarea class="node-description">Made friends from students who were taking the same units as me.</textarea></div><div class="mind-map-nodes event" id="Formed Study Groups" style="left: 647px; top: 3px; z-index: 2;"><textarea class="node-title">Formed Study Groups</textarea><textarea class="node-description">With the new friends I made, we formed study groups since we were all doing the same unit. I found it helpful to study with peers as we can bounce ideas off each other.</textarea></div><div class="mind-map-nodes consequence" id="New Hobbies" style="left: 653px; top: 516px; z-index: 2;"><textarea class="node-title">New Hobbies</textarea><textarea class="node-description">Some of the friends I made do casual sports so I ended up doing them and started becoming more social</textarea></div><div class="mind-map-nodes thought" id="Knowing Nobody" style="left: 386px; top: 384px; z-index: 2;"><textarea class="node-title">Knowing Nobody</textarea><textarea class="node-description">Moving by myself means I know no-one. I want hope that I can eventually make friends since it's difficult being alone</textarea></div><div class="mind-map-nodes consequence" id="Performing Academic" style="left: 898px; top: 5px; z-index: 2;"><textarea class="node-title">Performing Academic</textarea><textarea class="node-description">Studying with others resulted in learning concepts more easily and good grades! Very happy for myself</textarea></div><div class="mind-map-nodes event" id="Hard Assignments" style="left: 908px; top: 288px; z-index: 2;"><textarea class="node-title">Hard Assignments</textarea><textarea class="node-description">Had some very hard assignments. Struggling with some of the math concepts. </textarea></div><div class="mind-map-nodes thought" id="Ask for support" style="left: 912px; top: 515px; z-index: 2;"><textarea class="node-title">Ask for support</textarea><textarea class="node-description">Maybe there are support services that I can utilise to help me understand these hard math concepts.</textarea></div><div class="mind-map-nodes event" id="STIMulate" style="left: 1150px; top: 286px; z-index: 2;"><textarea class="node-title">STIMulate</textarea><textarea class="node-description">I went to this workshop thing called STIMulate and they had people there who were able to clarify some of the math problems I had.</textarea></div><div class="mind-map-nodes consequence" id="Easier Assignment" style="left: 1376px; top: 283px; z-index: 2;"><textarea class="node-title">Easier Assignment</textarea><textarea class="node-description">The support from STIMulate made the assignment I found hard easier! Now I can approach this problem more level-headed</textarea></div></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// &lt;![CDATA[  &lt;-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i &lt; sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href &amp;&amp; typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&amp;|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') &gt;= 0 ? '&amp;' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage &amp;&amp; !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]&gt;
+</script>
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" id="quick" style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;"><line x1="470" y1="584" x2="470.5" y2="456" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="736" y1="583" x2="736.5" y2="454" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="471" y1="328" x2="604" y2="326.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="737" y1="325" x2="872.5" y2="404.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1003" y1="715" x2="1005.5" y2="599.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1008" y1="484" x2="1002.5" y2="343" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="997" y1="202" x2="1122.5" y2="203" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1008" y1="484" x2="1128" y2="344" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="737" y1="325" x2="997.5" y2="406" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1258" y1="487" x2="1260" y2="600.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1258" y1="487" x2="1379" y2="486" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1262" y1="714" x2="1381" y2="599.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1500" y1="485" x2="1613" y2="483.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="471" y1="328" x2="604" y2="326.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="737" y1="325" x2="872.5" y2="404.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="737" y1="325" x2="997.5" y2="406" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="470" y1="584" x2="470.5" y2="456" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1008" y1="484" x2="1002.5" y2="343" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1008" y1="484" x2="1128" y2="344" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="997" y1="202" x2="1122.5" y2="203" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1003" y1="715" x2="1005.5" y2="599.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="736" y1="583" x2="736.5" y2="454" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1258" y1="487" x2="1260" y2="600.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1258" y1="487" x2="1379" y2="486" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1262" y1="714" x2="1381" y2="599.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1500" y1="485" x2="1613" y2="483.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/></svg><svg xmlns="http://www.w3.org/2000/svg" id="fix" style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;"><line x1="737" y1="325" x2="604" y2="326.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1008" y1="484" x2="872.5" y2="404.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1258" y1="487" x2="997.5" y2="406" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="471" y1="328" x2="470.5" y2="456" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="997" y1="202" x2="1002.5" y2="343" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1248" y1="204" x2="1128" y2="344" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1248" y1="204" x2="1122.5" y2="203" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1008" y1="484" x2="1005.5" y2="599.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="737" y1="325" x2="736.5" y2="454" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1262" y1="714" x2="1260" y2="600.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1500" y1="485" x2="1379" y2="486" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1500" y1="485" x2="1381" y2="599.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1726" y1="482" x2="1613" y2="483.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="471" y1="328" x2="470.5" y2="456" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="737" y1="325" x2="736.5" y2="454" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="737" y1="325" x2="604" y2="326.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1008" y1="484" x2="872.5" y2="404.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1008" y1="484" x2="1005.5" y2="599.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="997" y1="202" x2="1002.5" y2="343" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1248" y1="204" x2="1122.5" y2="203" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1248" y1="204" x2="1128" y2="344" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1258" y1="487" x2="997.5" y2="406" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1262" y1="714" x2="1260" y2="600.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1500" y1="485" x2="1379" y2="486" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1500" y1="485" x2="1381" y2="599.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/><line x1="1726" y1="482" x2="1613" y2="483.5" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/></svg><script type="application/json" id="savedState">{"nodeFrom":{"Moved To Queensland":["By Myself"],"Attending University":["Knowing Nobody","Moved To Queensland"],"By Myself":[],"Making Friends":["Attending University","New Hobbies"],"Formed Study Groups":["Making Friends"],"New Hobbies":[],"Knowing Nobody":[],"Performing Academic":["Formed Study Groups","Making Friends"],"Hard Assignments":["Attending University"],"Ask for support":["Hard Assignments"],"STIMulate":["Hard Assignments","Ask for support"],"Easier Assignment":["STIMulate"]},"nodeTo":{"Moved To Queensland":["Attending University"],"Attending University":["Making Friends","Hard Assignments"],"By Myself":["Moved To Queensland"],"Making Friends":["Formed Study Groups","Performing Academic"],"Formed Study Groups":["Performing Academic"],"New Hobbies":["Making Friends"],"Knowing Nobody":["Attending University"],"Performing Academic":[],"Hard Assignments":["Ask for support","STIMulate"],"Ask for support":["STIMulate"],"STIMulate":["Easier Assignment"],"Easier Assignment":[]},"allKeys":["Moved To Queensland","Attending University","By Myself","Making Friends","Formed Study Groups","New Hobbies","Knowing Nobody","Performing Academic","Hard Assignments","Ask for support","STIMulate","Easier Assignment"],"nodeInstance":2}</script></body></html>
