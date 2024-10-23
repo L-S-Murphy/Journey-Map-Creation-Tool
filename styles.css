@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  #outmost-container {
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    /* margin: 10px 10px; */
+    /* height: 100vh */
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  header {
+    background-color: rgba(0,30,54,255);
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .row-center {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  header .row-center {
+    padding: 20px 50px ;
+    justify-content: left;
+  }
+
+  header img {
+    height: 40px;
+    width: auto;
+    flex-basis: auto;
+  }
+
+  header h1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav {
+    background-color: rgba(0,46,83,255);
+    display: flex;
+    justify-content: center;
+  }
+
+  nav .row-center {
+    padding: 0 50px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+
+  nav a:hover {
+    background-color: white;
+    color: rgba(0,46,83,255);
+  }
+
+  #hide-control {
+    /* margin-right: auto */
+  }
+
+
+  #control-tab {
+    /* display: none; */
+    background-color: rgba(192, 192, 192, 0.705);
+    /* visibility: collapse; */
+  }
+
+  #control-right, #control-left {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+
+  #control-right {
+    flex-basis: 50%;
+
+  }
+
+  
+  #control-left {
+    flex-basis: 50%;
+
+  }
+
+  #input-container {
+    height:100%
+  }
+
+  #mind-map-container {
+    height: 84.5vh;
+  }
+  #mind-map {
+    padding: 10px;
+    /* border: 1px solid rgb(235, 236, 145); */
+    background-color: rgb(197,202,206);
+    height: 100%;
+    position: relative;
+    overflow:scroll;
+  }
+
+  .mind-map-nodes {
+    position: absolute;
+    border: 2px solid black;
+    padding: 10px;
+    width:  200px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow:   0px 0px 23px 0px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .node-description, .node-title{ 
+    padding: 5px;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize:none;
+    background-color: rgba(255, 255, 255,0.5);
+    /* flex-basis: 85%; */
+  }
+
+  .node-title{
+    text-align: center;
+    flex-basis: 15%;
+    background-color: rgba(255, 255, 255,0.3);
+    overflow: hidden;
+  }
+
+  .mind-map-nodes:hover {
+    cursor: pointer;
+  }
+
+  .event {
+    background-color: red;
+  }
+
+  .thought {
+    background-color: purple;
+  }
+
+  .consequence {
+    background-color: greenyellow;
+  }
+
+
+
+  #connections-container {
+    display:flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* default design is for 601px */
+
+
+@media (min-width: 768px) {
+
+  header, nav {
+    padding-left:  20px;
+    padding-right: 20px;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+
+  #mind-map-container {
+    display: flex;
+  }
+
+  #control-tab {
+    flex-direction: column;
+    display:flex;
+    width: 250px
+  }
+  
+  #mind-map {
+    flex-grow: 1;
+  }
+
+  /* #hide-control {
+    display: none;
+  } */
+
+  
+}
+
+@media (min-width: 1200px) {
+  .row-center {
+    max-width: 1200px;
+  }
+
+
+
+}
+
+/* show the control tab */
+@media (min-width: 1400px) {
+
+
+
+  
+}

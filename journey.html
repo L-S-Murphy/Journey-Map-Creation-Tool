@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Map Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="outmost-container">
+        <header>
+            <div class="row-center">
+                <img src="images/QUT.png" alt="QUT LOGO">
+                <h1> Journey Map Creator</h1>
+            </div>
+        </header>
+        <nav>
+            <div class="row-center">
+                <button id="hide-control"> Show Control Tab</button>
+                <!-- <a href="">
+                    <span>
+                        Placeholder
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        Placeholder
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        Placeholder
+                    </span>
+                </a>
+                <a href="">
+                    <span>
+                        Placeholder
+                    </span>
+                </a> -->
+            </div>
+        </nav>
+        <div id="mind-map-container">
+            <div id="control-tab">
+                <div id="control-left">
+                    <div id="node-title-container">
+                        Node Title: 
+                        <input type="node-title" name="node-title" id="node-title">
+                    </div>
+                    <div id="node-property-container">
+                        Node Type: 
+                        <select name="nodes" id="node-dropdown">
+                            <option value="event">Event</option>
+                            <option value="thought">Thoughts</option>
+                            <option value="consequence">Consequences</option>
+                        </select>
+                    </div>
+                    <div id="connections-container">
+                        <div id="connectors">
+                            <button id="add-connection">Add Connection</button>
+                        </div>
+                        <div id="connect-from-container">
+                            <h4>From:</h4>
+                            <ul id="connect-from">
+                                
+                            </ul>
+                        </div>
+                        <div id="connect-to-container">
+                            <h4>To:</h4>
+                            <ul>
+                                <li id="connect-to"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="delete-container">
+                        <button id="delete-button">
+                            Delete Selected Node
+                        </button>
+                    </div>
+                    <div id="save-container">
+                        <button>
+                            Save Journey Map
+                        </button>
+                    </div>
+                    <div id="export-container">
+                        <button>
+                            Export Data
+                        </button>
+                    </div>
+                </div>
+
+                <div id="control-right">
+                    <p>
+                        Text Content
+                    </p>
+                    <!-- <input type="text" id="input-container"> -->
+                    <textarea name="input-container" id="input-container">Double click within the interaction area to create your first node!</textarea>
+                </div>
+            </div>
+            <div id="mind-map">
+                <!-- DSA -->
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
+
+
