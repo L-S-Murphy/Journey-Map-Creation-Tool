@@ -45,5 +45,3 @@ This project was created to support QUT's EGB101 unit to help students identify 
 ## Example
 An example journey map is provided within the tool.
 
-## License
-This project is licensed under the MIT License.
